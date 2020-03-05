@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#mLearn back-end challenge</title>
+</head>
+<body>
+    <h1>Desafio de Aplicação</h1>
+    <h2>RestAPI</h2>
+    <h4>Cadastro de Usuário</h4>
+
+    <form method="POST" action="cadastro.php">
+    <table>
+        <tr><td><label>Número de celular:</label></td><td><input type="text" name="msisdn" id="msisdn" placeholder="Campo Obrigatório" required></td></tr>
+        <tr><td><label>Nome do usuário:</label></td><td><input type="text" name="name" id="name" placeholder="Campo Obrigatório" required><br></td></tr>
+        <tr><td><label>Nível de acesso:</label></td><td><select name="access_level" id="access_level">
+                                            <option value="free" selected>free</option>
+                                            <option value="premium">premium</option>
+                                        </select><br></td></tr>
+        <tr><td><label>Senha de acesso:</label></td><td><input type="password" name="password" id="password" placeholder="Campo Obrigatório" required><br></td></tr>
+        <tr><td><label>ID do usuário:</label></td><td><input type="text" name="external_id" id="external_id" placeholder="Campo Obrigatório" required><br></td></tr>
+        <tr><td height="10"></td></tr>
+        <tr><td><input type="submit" value="Cadastrar" id="cadastrar" name="cadastrar"></td></tr>
+    </form>
+    </table>
+    <br>
+    <a href="cadastro.html">Cadastrar usuários (banco)</a><br>
+    <a href="listar.html">Listar usuários (banco)</a><br>
+    <a href="view/usuario/listar">RestAPI/usuario/listar</a><br>
+</body>
+</html>
+
